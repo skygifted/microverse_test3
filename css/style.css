@@ -5,56 +5,55 @@
     box-shadow: 0;
 }
 
-.container{
+.containerr{
 
      display: grid;
      grid-template-columns: repeat(12,1fr);
-     grid-template-rows: repeat(1,100vh);
-
+     grid-template-rows: auto;
+     background-image: url(../pic1.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 100%;
+   
 }
 
-.aside{
+.inner-con{
 
-    grid-column: 1/4;
-    grid-row: 1;
-    background-color: #cfcfcf;
-    cursor: pointer;
+  grid-column: 1/13;
+  overflow: auto;
+  background-color: rgba(106, 10, 161, 0.637);
+  color: white !important;
+ 
 }
-.aside h1 {
-     white-space: nowrap;
-     font-size: 23px;
+
+
+header{
+
+     grid-column: 1/13;
      text-align: center;
-     padding: 1em 0px;
-     overflow-y: auto;
-     overflow-x: hidden;
-}
-.aside ul li{
-
-    padding-left: 1em;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    border-bottom: 2px solid rgb(66, 66, 66);
-}
-.aside ul {
-
-     overflow-y: auto;
-     overflow-x: hidden;
-     height: 90%;
-}
-section{
-     grid-column: 4/13;
-     grid-row: 1;
-     overflow-y: auto;
-     overflow-x: hidden;
-     background-color: #f5f5f5;
+     padding: 8px;
 }
 
-.text-con{
-    display: none;
-    padding: 13px;
+.form-con{
+
+      grid-column: 1/13;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.form-con form {
+
+      width: 50%;
+      height: auto;
+      background-color: rgba(33, 17, 48, 0.76);
+      padding: 15px;
+      margin-bottom: 2em;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.623);
+
 }
 
-/* .inner-section{
-
-     display: none;
-} */
+.bb button{
+     color: white;
+     background-color: green;
+     width: 100%;
+}
